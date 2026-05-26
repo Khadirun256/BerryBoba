@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BerryBoba</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Nunito',sans-serif;
+}
+
+body{
+display:flex;
+background:#FFF9FB;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+width:260px;
+height:100vh;
+position:fixed;
+background:linear-gradient(180deg,#FF6B9D,#FF9EB5);
+padding:40px 25px;
+color:white;
+}
+
+.logo{
+font-size:34px;
+font-weight:800;
+margin-bottom:50px;
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar li{
+margin:20px 0;
+}
+
+.sidebar a{
+color:white;
+text-decoration:none;
+font-size:18px;
+}
+
+.main{
+margin-left:260px;
+width:100%;
+}
+
+/* HERO */
+
+.hero{
+padding:80px 60px;
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+gap:40px;
+}
+
+.hero h1{
+font-size:4rem;
+line-height:1.1;
+color:#E63E75;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:#E63E75;
+color:white;
+text-decoration:none;
+border-radius:50px;
+}
+
+.hero img{
+width:100%;
+border-radius:30px;
+}
+
+/* FEATURES */
+
+.features{
+padding:20px 60px 60px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.feature{
+background:white;
+padding:25px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 20px rgba(0,0,0,.05);
+}
+
+/* PRODUCTS */
+
+.products{
+padding:60px;
+}
+
+.products h2{
+margin-bottom:30px;
+font-size:2.2rem;
+}
+
+.product{
+background:white;
+display:flex;
+align-items:center;
+gap:25px;
+padding:20px;
+border-radius:25px;
+margin-bottom:20px;
+box-shadow:0 10px 20px rgba(0,0,0,.05);
+}
+
+.product img{
+width:150px;
+height:150px;
+object-fit:cover;
+border-radius:20px;
+}
+
+.price{
+color:#E63E75;
+font-weight:800;
+margin-top:10px;
+}
+
+/* OWNER */
+
+.owner{
+margin:60px;
+background:#FFE5EE;
+padding:40px;
+border-radius:30px;
+}
+
+.owner h2{
+color:#E63E75;
+margin-bottom:15px;
+}
+
+/* FOOTER */
+
+footer{
+padding:30px 60px;
+text-align:center;
+color:#777;
+}
+
+@media(max-width:900px){
+
+body{
+display:block;
+}
+
+.sidebar{
+position:relative;
+width:100%;
+height:auto;
+}
+
+.main{
+margin-left:0;
+}
+
+.hero{
+grid-template-columns:1fr;
+}
+
+.features{
+grid-template-columns:1fr 1fr;
+}
+
+.product{
+flex-direction:column;
+text-align:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">🍓 BerryBoba</div>
+
+<ul>
+<li><a href="#">Beranda</a></li>
+<li><a href="#">Menu</a></li>
+<li><a href="#">Promo</a></li>
+<li><a href="#">Tentang Kami</a></li>
+<li><a href="#">Kontak</a></li>
+</ul>
+
+</div>
+
+<div class="main">
+
+<section class="hero">
+
+<div>
+
+<h1>Sweet Drinks, Happy Moments 🧋</h1>
+
+<p>
+BerryBoba adalah destinasi minuman dan camilan kekinian yang menghadirkan berbagai varian boba, milk tea, fruit tea, donat, dan dessert dengan cita rasa premium.
+</p>
+
+<a href="#" class="btn">Pesan Sekarang</a>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1558857563-c0c7c0a5f7f8?auto=format&fit=crop&w=900&q=80">
+
+</section>
+
+<section class="features">
+
+<div class="feature">
+🧋
+<h3>Boba Premium</h3>
+</div>
+
+<div class="feature">
+🍩
+<h3>Donat Fresh</h3>
+</div>
+
+<div class="feature">
+🍰
+<h3>Dessert Manis</h3>
+</div>
+
+<div class="feature">
+🚚
+<h3>Pesan Online</h3>
+</div>
+
+</section>
+
+<section class="products">
+
+<h2>Menu Favorit</h2>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc">
+
+<div>
+<h3>Brown Sugar Boba</h3>
+<p>Minuman boba dengan gula aren premium.</p>
+<div class="price">Rp18.000</div>
+</div>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1556911220-bff31c812dba">
+
+<div>
+<h3>Chocolate Donut</h3>
+<p>Donat lembut dengan topping cokelat melimpah.</p>
+<div class="price">Rp12.000</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="owner">
+
+<h2>Tentang Kami</h2>
+
+<p>
+BerryBoba menghadirkan pengalaman menikmati minuman dan dessert kekinian dengan kualitas terbaik dan harga terjangkau.
+</p>
+
+<br>
+
+<p><strong>Owner:</strong> Miratul</p>
+<p><strong>WhatsApp:</strong> 085267579795</p>
+
+</section>
+
+<footer>
+
+© 2026 BerryBoba | Miratul
+
+</footer>
+
+</div>
+
+</body>
+</html>
